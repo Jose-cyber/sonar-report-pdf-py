@@ -159,7 +159,11 @@ def generate_body():
                     margin: 0 auto;
                     background-color: #EDF7F6;
                 }
-            </style></head><body><div class="wrapper"><div id="content" class="flex-div">"""
+                .logo-sonar{
+                    width: 200px;
+                    height: 60px;
+                }
+            </style></head><body><div><img class="logo-sonar" src="https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg"><hr></div><div class="wrapper"><div id="content" class="flex-div">"""
 
 def generate_all():
     global coverage, duplicated_lines, bug_lines, security_status, code_smells, vulnerabilities, bugs, pie_data 
